@@ -1,16 +1,53 @@
-# React + Vite
+# Snake Game — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Juego clásico "Snake" implementado con React y Vite.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Serpiente que crece al comer, con niveles de dificultad progresivos
+- **Mejor puntaje** guardado automáticamente en el navegador (localStorage)
+- **Pausa** con tecla `P` / `Escape` o con el botón del D-pad
+- Controles táctiles (D-pad) para móviles
+- Indicador de "¡Nuevo récord!" al superar la marca guardada
 
-## React Compiler
+## Requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 16 o superior
+- npm o yarn
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/jsam1904/Lab-6-Snake.git   
+npm install
+```
+
+## Ejecutar en desarrollo
+
+```bash
+npm run dev
+# Abre http://localhost:5173 en el navegador
+```
+
+## Construir para producción
+
+```bash
+npm run build
+npm run preview
+```
+
+## Cómo jugar
+
+| Acción | Teclado | Botón |
+| --- | --- | --- |
+| Mover | `↑` `↓` `←` `→` | D-pad |
+| Pausar / Reanudar | `P` o `Esc` | ⏸ en el D-pad |
+
+- **Objetivo:** come la comida (naranja) para que la serpiente crezca y sumar puntos.
+- **Niveles:** cada 50 puntos la velocidad aumenta.
+- **Game over:** si la serpiente choca contra una pared o su propio cuerpo.
+- **Récord:** se guarda automáticamente entre sesiones.
+
+## Autor
+
+- Nombre: Javier Alvarado
