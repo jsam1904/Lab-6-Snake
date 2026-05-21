@@ -48,6 +48,10 @@ npm run preview
 - **Game over:** si la serpiente choca contra una pared o su propio cuerpo.
 - **Récord:** se guarda automáticamente entre sesiones.
 
+## Demo
+
+- Sitio desplegado en Vercel: https://lab-6-snake.vercel.app
+
 ## Autor
 
 - Nombre: Javier Alvarado
